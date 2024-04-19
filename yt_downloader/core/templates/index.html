@@ -1,0 +1,18 @@
+{% extends "base.html" %} {% load static %} {% block content %}
+
+<div class="subscribe"><p>
+    Youtube video downloader</p>
+ 
+
+
+ <form action="" method="post" > 
+    {% csrf_token %} 
+
+    <label for="link">Enter URL:</label> 
+    <input type="text" id="link" name="link"class="subscribe-input"><br><br> 
+   <input type="submit" value="Submit"class="submit-btn"> 
+ </form> 
+
+
+</div>
+{% endblock content %}
